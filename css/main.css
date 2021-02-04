@@ -1,0 +1,74 @@
+@import "./reboot.css";
+
+html {
+  font-size: 10px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+img {
+  width: 100%;
+}
+
+/* Navbar */
+
+.nav__container {
+  background-color: white;
+  height: 6rem;
+  padding: 14px 0;
+}
+
+.menu-btn {
+  position: absolute;
+  z-index: 1;
+  right: 0.5rem;
+  top: 2rem;
+  height: 24px;
+  width: 28px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn__burger {
+  position: absolute;
+  right: 0.25rem;
+  top: 1rem;
+  width: 22px;
+  height: 2.2px;
+  background: #000;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn__burger::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  width: 22px;
+  height: 2.2px;
+  background: #000;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn__burger::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  width: 14px;
+  height: 2.2px;
+  background: #000;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav {
+  height: inherit;
+}
+.flex {
+  display: flex;
+}
+.logo {
+  height: 100%;
+}
+.logo__img {
+  height: 60%;
+  width: auto;
+}
