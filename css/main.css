@@ -58,7 +58,18 @@ img {
   background: #000;
   transition: all 0.5s ease-in-out;
 }
-
+.menu-btn__burger.open {
+  transform: rotate(720deg);
+  background: transparent;
+}
+.menu-btn__burger.open::before {
+  transform: rotate(45deg) translate(5px, 5px);
+  width: 25px;
+}
+.menu-btn__burger.open::after {
+  transform: rotate(-45deg) translate(4px, -3px);
+  width: 25px;
+}
 .nav {
   height: inherit;
 }
