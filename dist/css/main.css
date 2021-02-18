@@ -180,7 +180,6 @@ a {
 
 .wrapper {
   padding-top: 6rem;
-  padding-bottom: 6rem;
   margin: 0 auto;
 }
 
@@ -199,15 +198,67 @@ a {
   font-family: "Dancing Script", cursive;
   text-align: center;
   position: absolute;
-  background: #ffa61e;
+  background: #2380dc;
   opacity: 0.8;
   bottom: 0;
   left: 0;
   right: 0;
   margin: 0 auto;
-  text-shadow: 1px 1px 5px black;
+  text-shadow: 0 0 1px black;
   padding: 1rem 1rem;
-  -webkit-box-shadow: 0 0 25px black;
-          box-shadow: 0 0 25px black;
+  /*box-shadow: 0 0 25px black;*/
   font-weight: 700;
+  color: #fff;
+}
+
+.card__container-headline {
+  background-color: #ffa61e;
+  padding: 2rem 0;
+}
+
+.card__container h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.card__container .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+  background: #2380dc;
+  color: #fff;
+  position: relative;
+}
+
+.card__container .card__body {
+  position: absolute;
+  top: 1rem;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  background: #1c66b0;
+  opacity: 0.8;
+  padding: 10rem 1rem;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.card__container .card__title {
+  font-size: 2.2rem;
+}
+
+.card__container .card__text {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  font-size: 1.6rem;
+}
+
+footer {
+  background-color: #ffa61e;
 }
