@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VVN</title>
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./dist/css/main.css" />
   </head>
   <body>
     <header class="nav__container d-flex">
@@ -13,9 +13,9 @@
       </div>
 
       <div class="logo">
-        <a class="logo__link" href="./index.html"
-          ><img src="./logos/logo.png" alt="Logo" class="logo__img"
-        /></a>
+        <a class="logo__link" href="./index.html">
+          <img src="./dist/logos/logo.png" alt="Logo" class="logo__img" />
+        </a>
       </div>
       <nav class="nav">
         <ul class="nav__menu">
@@ -40,18 +40,26 @@
         </ul>
       </nav>
     </header>
-    <div class="container">
+    <div class="wrapper">
       <div class="banner">
-        <img src="./images/tukros.jpg" alt="Banner picture" />
+        <div class="container">
+          <div class="banner__image-container">
+            <img src="/dist/images/FB_IMG_1612303493962.jpg"" alt="">
+          </div>
+          <blockquote>
+            “Az, hogy megsebeztek, talán nem rajtad múlt, de hogy a gyógyulás
+            útját választod-e, mindig a te döntésed.” (Desmond és Mpho Tutu)
+          </blockquote>
+        </div>
       </div>
-      <blockquote>
-        “Az, hogy megsebeztek, talán nem rajtad múlt, de hogy a gyógyulás útját
-        választod-e, mindig a te döntésed.” (Desmond és Mpho Tutu)
-      </blockquote>
       <section class="services">
         <h2>Szolgáltatások</h2>
         <div class="card">
-          <img src="./images/masszázs1.jpg" class="card__img" alt="Masszázs" />
+          <img
+            src="./dist/images/masszázs1.jpg"
+            class="card__img"
+            alt="Masszázs"
+          />
           <div class="card__body">
             <h5 class="card__title">Masszázs, manuális kezelések</h5>
             <p class="card__text">
@@ -62,7 +70,7 @@
         </div>
         <div class="card">
           <img
-            src="./images/gerinctréning.JPG"
+            src="./dist/images/gerinctréning.JPG"
             class="card__img"
             alt="Gerinctréning"
           />
@@ -75,7 +83,11 @@
           </div>
         </div>
         <div class="card">
-          <img src="./images/masszázs1.jpg" class="card__img" alt="Masszázs" />
+          <img
+            src="./dist/images/masszázs1.jpg"
+            class="card__img"
+            alt="Masszázs"
+          />
           <div class="card__body">
             <h5 class="card__title">Masszázs, manuális kezelések</h5>
             <p class="card__text">
@@ -85,7 +97,11 @@
           </div>
         </div>
         <div class="card">
-          <img src="./images/masszázs1.jpg" class="card__img" alt="Masszázs" />
+          <img
+            src="./dist/images/masszázs1.jpg"
+            class="card__img"
+            alt="Masszázs"
+          />
           <div class="card__body">
             <h5 class="card__title">Masszázs, manuális kezelések</h5>
             <p class="card__text">
@@ -95,7 +111,11 @@
           </div>
         </div>
         <div class="card">
-          <img src="./images/masszázs1.jpg" class="card__img" alt="Masszázs" />
+          <img
+            src="./dist/images/masszázs1.jpg"
+            class="card__img"
+            alt="Masszázs"
+          />
           <div class="card__body">
             <h5 class="card__title">Masszázs, manuális kezelések</h5>
             <p class="card__text">
@@ -110,6 +130,6 @@
       <p>&copy 2021 VVN</p>
       <p>Minden jog fenntertva</p>
     </footer>
-    <script src="./js/main.js"></script>
+    <script src="./dist/js/main.js"></script>
   </body>
 </html>

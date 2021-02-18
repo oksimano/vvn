@@ -1,50 +1,10 @@
-$primary-color: #6bbba9;
-$secondary-color: #159477;
-$third-color: #f49202;
-$text-color: #fff;
+@import "config";
 
-*,
-*:before,
-*:after {
-  padding: 0;
-  margin: 0;
-  box-sizing: inherit;
-}
-html {
-  font-size: 10px;
-  box-sizing: border-box;
-}
-ul {
-  list-style: none;
-  padding: 0;
-}
-img {
-  width: 100%;
-  overflow: hidden;
-}
-a {
-  text-decoration: none;
-}
-
-/* common style*/
-
-.p-abs_l_t {
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-.d-flex-column {
-  display: flex;
-  flex-direction: column;
-}
-.d-flex {
-  display: flex;
-}
 /* Navbar */
 
 .menu-btn {
   position: absolute;
-  z-index: 1;
+  z-index: 99;
   right: 1.5rem;
   top: 2rem;
   height: 24px;
@@ -80,6 +40,7 @@ a {
     &.open {
       transform: rotate(720deg);
       background: transparent;
+      z-index: 99;
       &::before {
         transform: rotate(45deg) translate(5px, 5px);
         width: 25px;
@@ -99,6 +60,7 @@ a {
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   left: 0;
   top: 0;
+  z-index: 99;
 }
 .nav {
   &__menu {
@@ -109,10 +71,10 @@ a {
     position: absolute;
     left: 0;
     top: 6rem;
-    width: 250px;
+    width: 100vw;
     z-index: 10;
     background-color: $secondary-color;
-    transform: translateX(-300px);
+    transform: translateX(-100vw);
 
     transition: all 0.5s ease-in-out;
     &.open {
@@ -122,10 +84,11 @@ a {
   }
   &__item {
     padding: 2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   }
   &__link {
     font-size: 2rem;
-    color: $text-color;
+    color: darken($text-color, 90%);
   }
 }
 
@@ -140,7 +103,34 @@ a {
   }
 }
 
+.wrapper {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+
+  margin: 0 auto;
+}
 .container {
-  margin-top: 6rem;
-  padding: 1rem;
+  max-width: 1366px;
+  margin: 0 auto;
+  position: relative;
+}
+.banner {
+  background-color: $primary-color;
+  padding-top: 10rem;
+  &__image-container {
+  }
+  blockquote {
+    font-size: 2.2rem;
+    font-family: "Dancing Script", cursive;
+    max-width: 600px;
+    text-align: center;
+    position: absolute;
+    background: rgba(128, 128, 128, 0.8);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    color: $text-color;
+    padding: 1rem 1rem;
+  }
 }
