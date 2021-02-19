@@ -1,0 +1,20 @@
+{
+  "name": "vvn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oksimano/vvn.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oksimano/vvn/issues"
+  },
+  "homepage": "https://oksimano.github.io/vvn"
+}
