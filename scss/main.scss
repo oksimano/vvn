@@ -137,6 +137,7 @@
     background-repeat: no-repeat;
     height: 400px;
     background-size: cover;
+    box-shadow: 0 0 150px #2380dc inset;
   }
   blockquote {
     font-size: 2.2rem;
@@ -161,31 +162,31 @@
 .card__container {
   &-headline {
     background-color: $secondary-color;
-    padding: 2rem 0;
+    padding: 1.5rem 0;
   }
   h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: center;
   }
   .card {
     display: flex;
     flex-direction: column;
-    padding: 1rem;
-    background: $primary-color;
+    margin: 2rem;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
     color: $text-color;
     position: relative;
     &__body {
       position: absolute;
-      top: 1rem;
-      bottom: 1rem;
-      left: 1rem;
-      right: 1rem;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
       background: darken($primary-color, 10%);
       opacity: 0.8;
-      padding: 10rem 1rem;
-      line-height: 1.2;
+      user-select: none;
       text-align: center;
       opacity: 0;
+      box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
       transition: all 0.4s;
       &:hover {
         opacity: 0.8;
@@ -208,10 +209,10 @@
       @extend .card__text;
       color: $text-color;
       top: 70%;
-      transition: all 0.2s;
+      transition: all 0.4s;
       &:hover {
         color: $secondary-color;
-        transform: scale(1.1);
+        transform: scale(1.3);
       }
     }
   }

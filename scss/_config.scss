@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Ballet&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap");
 
 $primary-color: rgb(35, 128, 220);
 $secondary-color: #ffa61e;
@@ -29,7 +30,9 @@ img {
 a {
   text-decoration: none;
 }
-
+body {
+  font-family: "Merriweather", serif;
+}
 /* common style*/
 
 .p-abs_l_t {

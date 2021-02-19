@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Ballet&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap");
 *,
 *:before,
 *:after {
@@ -27,6 +28,10 @@ img {
 
 a {
   text-decoration: none;
+}
+
+body {
+  font-family: "Merriweather", serif;
 }
 
 /* common style*/
@@ -205,6 +210,8 @@ a {
   background-repeat: no-repeat;
   height: 400px;
   background-size: cover;
+  -webkit-box-shadow: 0 0 150px #2380dc inset;
+          box-shadow: 0 0 150px #2380dc inset;
 }
 
 .banner blockquote {
@@ -227,11 +234,11 @@ a {
 
 .card__container-headline {
   background-color: #ffa61e;
-  padding: 2rem 0;
+  padding: 1.5rem 0;
 }
 
 .card__container h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-align: center;
 }
 
@@ -243,24 +250,29 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 1rem;
-  background: #2380dc;
+  margin: 2rem;
+  -webkit-box-shadow: #26394d 0px 20px 30px -10px;
+          box-shadow: #26394d 0px 20px 30px -10px;
   color: #fff;
   position: relative;
 }
 
 .card__container .card__body {
   position: absolute;
-  top: 1rem;
-  bottom: 1rem;
-  left: 1rem;
-  right: 1rem;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   background: #1c66b0;
   opacity: 0.8;
-  padding: 10rem 1rem;
-  line-height: 1.2;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   text-align: center;
   opacity: 0;
+  -webkit-box-shadow: #26394d 0px 20px 30px -10px;
+          box-shadow: #26394d 0px 20px 30px -10px;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
@@ -286,14 +298,14 @@ a {
 .card__container .card a {
   color: #fff;
   top: 70%;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .card__container .card a:hover {
   color: #ffa61e;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 footer {
