@@ -203,8 +203,8 @@ body {
   padding: 30px 10px;
   max-width: 1366px;
   margin: 0 auto;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(35, 128, 220, 0.13)), to(rgba(35, 128, 220, 0.089))), url(/dist/images/vivien.png), radial-gradient(circle, #2380dc 0%, #f4f4f4 0%, #2380dc 100%);
-  background: linear-gradient(90deg, rgba(35, 128, 220, 0.13), rgba(35, 128, 220, 0.089)), url(/dist/images/vivien.png), radial-gradient(circle, #2380dc 0%, #f4f4f4 0%, #2380dc 100%);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(35, 128, 220, 0.13)), to(rgba(35, 128, 220, 0.089))), url(../images/vivien.png), radial-gradient(circle, #2380dc 0%, #f4f4f4 0%, #2380dc 100%);
+  background: linear-gradient(90deg, rgba(35, 128, 220, 0.13), rgba(35, 128, 220, 0.089)), url(../images/vivien.png), radial-gradient(circle, #2380dc 0%, #f4f4f4 0%, #2380dc 100%);
   background-repeat: repeat, repeat, repeat;
   background-size: auto, auto, auto;
   background-repeat: no-repeat;
