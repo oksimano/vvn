@@ -193,6 +193,20 @@ a {
   position: relative;
 }
 
+.banner__image-container {
+  overflow: hidden;
+  padding: 30px 10px;
+  max-width: 1366px;
+  margin: 0 auto;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(35, 128, 220, 0.13)), to(rgba(35, 128, 220, 0.089))), url(/dist/images/vivien.png), radial-gradient(circle, #2380dc 0%, #f4f4f4 0%, #2380dc 100%);
+  background: linear-gradient(90deg, rgba(35, 128, 220, 0.13), rgba(35, 128, 220, 0.089)), url(/dist/images/vivien.png), radial-gradient(circle, #2380dc 0%, #f4f4f4 0%, #2380dc 100%);
+  background-repeat: repeat, repeat, repeat;
+  background-size: auto, auto, auto;
+  background-repeat: no-repeat;
+  height: 400px;
+  background-size: cover;
+}
+
 .banner blockquote {
   font-size: 2.2rem;
   font-family: "Dancing Script", cursive;
@@ -246,17 +260,40 @@ a {
   padding: 10rem 1rem;
   line-height: 1.2;
   text-align: center;
+  opacity: 0;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
-.card__container .card__title {
-  font-size: 2.2rem;
+.card__container .card__body:hover {
+  opacity: 0.8;
 }
 
-.card__container .card__text {
+.card__container .card__title, .card__container .card__text, .card__container .card a {
   position: absolute;
-  top: 50%;
-  left: 40%;
+  left: 0;
+  right: 0;
+  top: 35%;
+  font-size: 2.2rem;
+  padding: 0 1rem;
+}
+
+.card__container .card__text, .card__container .card a {
   font-size: 1.6rem;
+  top: 45%;
+}
+
+.card__container .card a {
+  color: #fff;
+  top: 70%;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.card__container .card a:hover {
+  color: #ffa61e;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 footer {
