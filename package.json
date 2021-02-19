@@ -6,15 +6,6 @@
   "scripts": {
     "deploy": "gh-pages -d dist"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/oksimano/vvn.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/oksimano/vvn/issues"
-  },
   "homepage": "https://oksimano.github.io/vvn",
   "dependencies": {
     "gh-pages": "^3.1.0"
