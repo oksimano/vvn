@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/oksimano/vvn/issues"
   },
-  "homepage": "https://oksimano.github.io/vvn"
+  "homepage": "https://oksimano.github.io/vvn",
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
+  }
 }
