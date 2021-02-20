@@ -94,7 +94,7 @@
 
 .logo {
   height: 100%;
-  padding-top: 1.7rem;
+  padding-top: 1.3rem;
   padding-left: 1rem;
 
   &__img {
@@ -125,18 +125,12 @@
         rgba(35, 128, 220, 0.13),
         rgba(35, 128, 220, 0.089)
       ),
-      url(../images/vivien.png),
-      radial-gradient(
-        circle,
-        rgb(35, 128, 220) 0%,
-        rgba(244, 244, 244, 1) 0%,
-        rgb(35, 128, 220) 100%
-      );
+      url(../images/123.png);
     background-repeat: repeat, repeat, repeat;
     background-size: auto, auto, auto;
     background-repeat: no-repeat;
-    height: 400px;
-    background-size: cover;
+    height: 50vh;
+    background-size: contain;
     box-shadow: 0 0 150px #2380dc inset;
   }
   blockquote {
@@ -146,7 +140,7 @@
     text-align: center;
     position: absolute;
     background: $primary-color;
-    opacity: 0.8;
+
     bottom: 0;
     left: 0;
     right: 0;
@@ -220,4 +214,12 @@
 
 footer {
   background-color: $secondary-color;
+  height: 50px;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    padding: 0 1rem;
+  }
 }
