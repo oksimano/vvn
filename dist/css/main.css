@@ -198,7 +198,6 @@ body {
 }
 
 .banner {
-  background-color: #156dc5;
   position: relative;
 }
 
@@ -207,13 +206,10 @@ body {
   padding: 30px 10px;
   max-width: 1366px;
   margin: 0 auto;
-  background-image: url(../images/123.png), -webkit-gradient(linear, left top, right bottom, from(rgba(21, 109, 197, 0.6)), to(#156dc5));
-  background-image: url(../images/123.png), linear-gradient(to right bottom, rgba(21, 109, 197, 0.6), #156dc5);
+  background-image: url(../images/123.png);
   background-repeat: no-repeat;
   height: 450px;
   background-size: contain;
-  -webkit-box-shadow: 0 0 150px #2380dc inset;
-          box-shadow: 0 0 150px #2380dc inset;
 }
 
 .banner blockquote {

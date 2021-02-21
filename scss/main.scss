@@ -109,8 +109,6 @@
   margin: 0 auto;
 }
 .banner {
-  background-color: $primary-color;
-
   position: relative;
   &__image-container {
     overflow: hidden;
@@ -118,17 +116,11 @@
     max-width: 1366px;
     margin: 0 auto;
 
-    background-image: url(../images/123.png),
-      linear-gradient(
-        to right bottom,
-        rgba(21, 109, 197, 0.6),
-        rgba(21, 109, 197, 1)
-      );
+    background-image: url(../images/123.png);
 
     background-repeat: no-repeat;
     height: 450px;
     background-size: contain;
-    box-shadow: 0 0 150px rgb(35, 128, 220) inset;
   }
   blockquote {
     font-size: 2.2rem;
