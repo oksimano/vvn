@@ -58,8 +58,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 /* Navbar */
@@ -178,13 +179,11 @@ body {
 }
 
 .logo {
-  height: 100%;
-  padding-top: 1.3rem;
   padding-left: 1rem;
 }
 
 .logo__img {
-  height: 32px;
+  height: 24px;
   width: auto;
 }
 
