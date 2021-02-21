@@ -120,18 +120,18 @@
     padding: 30px 10px;
     max-width: 1366px;
     margin: 0 auto;
-    background: linear-gradient(
-        90deg,
-        rgba(35, 128, 220, 0.13),
-        rgba(35, 128, 220, 0.089)
-      ),
-      url(../images/123.png);
-    background-repeat: repeat, repeat, repeat;
-    background-size: auto, auto, auto;
+
+    background-image: url(../images/123.png),
+      linear-gradient(
+        to right bottom,
+        rgba(21, 109, 197, 0.6),
+        rgba(21, 109, 197, 1)
+      );
+
     background-repeat: no-repeat;
-    height: 50vh;
+    height: 450px;
     background-size: contain;
-    box-shadow: 0 0 150px #2380dc inset;
+    box-shadow: 0 0 150px rgb(35, 128, 220) inset;
   }
   blockquote {
     font-size: 2.2rem;
@@ -150,65 +150,6 @@
     /*box-shadow: 0 0 25px black;*/
     font-weight: 700;
     color: $text-color;
-  }
-}
-
-.card__container {
-  &-headline {
-    background-color: $secondary-color;
-    padding: 1.5rem 0;
-  }
-  h2 {
-    font-size: 2.5rem;
-    text-align: center;
-  }
-  .card {
-    display: flex;
-    flex-direction: column;
-    margin: 2rem;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    color: $text-color;
-    position: relative;
-    &__body {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: darken($primary-color, 10%);
-      opacity: 0.8;
-      user-select: none;
-      text-align: center;
-      opacity: 0;
-      box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-      transition: all 0.4s;
-      &:hover {
-        opacity: 0.8;
-      }
-    }
-    &__title {
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 35%;
-      font-size: 2.2rem;
-      padding: 0 1rem;
-    }
-    &__text {
-      @extend .card__title;
-      font-size: 1.6rem;
-      top: 45%;
-    }
-    a {
-      @extend .card__text;
-      color: $text-color;
-      top: 70%;
-      transition: all 0.4s;
-      &:hover {
-        color: $secondary-color;
-        transform: scale(1.3);
-      }
-    }
   }
 }
 
