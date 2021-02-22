@@ -53,4 +53,12 @@ body {
 .container {
   max-width: 1366px;
   margin: 0 auto;
+  overflow: hidden;
+  padding: 30px 10px;
+}
+
+.bg-contain-norepeat {
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 450px;
 }

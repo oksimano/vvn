@@ -111,15 +111,8 @@
 
 .banner {
   position: relative;
-  &__image-container {
-    overflow: hidden;
-    padding: 30px 10px;
-    max-width: 1366px;
-    margin: 0 auto;
+  &__image {
     background-image: url(../images/123.png);
-    background-repeat: no-repeat;
-    height: 450px;
-    background-size: contain;
   }
   blockquote {
     font-size: 1.8rem;
