@@ -99,7 +99,10 @@
     width: auto;
   }
 }
-
+.logo__title {
+  font-size: 1.2rem;
+  padding-right: 3rem;
+}
 .wrapper {
   padding-top: 6rem;
   margin: 0 auto;
@@ -112,28 +115,25 @@
     padding: 30px 10px;
     max-width: 1366px;
     margin: 0 auto;
-
     background-image: url(../images/123.png);
-
     background-repeat: no-repeat;
     height: 450px;
     background-size: contain;
   }
   blockquote {
-    font-size: 2.2rem;
-    font-family: "Dancing Script", cursive;
-
+    font-size: 1.8rem;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     text-align: center;
     position: absolute;
     background: $primary-color;
-
     bottom: 0;
     left: 0;
     right: 0;
     margin: 0 auto;
     text-shadow: 0 0 1px $hamburger-color;
     padding: 1rem 1rem;
-    font-weight: 700;
+    font-weight: 600;
     color: $text-color;
   }
 }
