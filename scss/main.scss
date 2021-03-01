@@ -155,10 +155,21 @@
 .services {
   padding-bottom: 2rem;
   line-height: 1.25;
+
   &__item {
     padding-top: 1rem;
   }
   &__paragraph {
+    font-size: 1.6rem;
+  }
+  .sub__title {
+    font-size: 1.8rem;
+    background-color: $primary-color;
+    color: $text-color;
+  }
+  .subsub__title {
+    background-color: $primary-color;
+    color: $text-color;
     font-size: 1.6rem;
   }
   img {

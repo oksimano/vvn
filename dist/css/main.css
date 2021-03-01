@@ -270,6 +270,18 @@ body {
   font-size: 1.6rem;
 }
 
+.services .sub__title {
+  font-size: 1.8rem;
+  background-color: #562e19;
+  color: #fff;
+}
+
+.services .subsub__title {
+  background-color: #562e19;
+  color: #fff;
+  font-size: 1.6rem;
+}
+
 .services img {
   display: none;
 }
