@@ -4,11 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Szolgáltatások</title>
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <div class="container">
+    <header class="nav__container d-flex">
+      <div class="logo">
+        <a class="logo__link" href="./index.html">
+          <img src="./logos/logo.png" alt="Logo" class="logo__img" />
+        </a>
+      </div>
+      <div class="logo__title">
+        <h3>Masszázs, mozgás, tanácsadás</h3>
+      </div>
+      <div class="menu-btn">
+        <span class="menu-btn__burger"></span>
+      </div>
+      <nav class="nav">
+        <ul class="nav__menu">
+          <li class="nav__item">
+            <a href="./index.html" class="nav__link">Kezdőlap</a>
+          </li>
+          <li class="nav__item">
+            <a href="./about.html" class="nav__link">Bemutatkozás</a>
+          </li>
+          <li class="nav__item">
+            <a href="./services.html" class="nav__link">Szolgáltatások</a>
+          </li>
+          <li class="nav__item">
+            <a href="./technics.html" class="nav__link">Technikák</a>
+          </li>
+          <li class="nav__item">
+            <a href="./qualification.html" class="nav__link">Képesítések</a>
+          </li>
+          <li class="nav__item">
+            <a href="./prices.html" class="nav__link">Árak</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="wrapper container">
       <h1 class="main__title">Szolgáltatásaim</h1>
-      <section class="services__container">
+      <section class="services">
         <h2 class="sub__title">Intelligens masszázs manuális kezelések</h2>
         <div class="services__item">
           <p class="services__paragraph">
@@ -27,7 +63,7 @@
           <img src="./images/masszázs1.jpg" alt="Masszázs" />
         </div>
       </section>
-      <section class="services__container">
+      <section class="services">
         <h2 class="sub__title">Gerinctréning</h2>
         <div class="services__item">
           <p class="services__paragraph">
@@ -57,7 +93,7 @@
           <img src="./images/gerinctréning.JPG" alt="Gerinctréning" />
         </div>
       </section>
-      <section class="services__container">
+      <section class="services">
         <h2 class="sub__title">Orientális tánc, mint terápia</h2>
         <div class="services__item">
           <p class="services__paragraph">
@@ -79,7 +115,7 @@
           <img src="./images/hastanc.jpg" alt="Hastánc" />
         </div>
       </section>
-      <section class="services__container">
+      <section class="services">
         <h2 class="sub__title">Kismama hastánc</h2>
         <div class="services__item">
           <p class="services__paragraph">
@@ -106,7 +142,7 @@
           <img src="./images/kismama hastanc.jpg" alt="Kismama hastánc" />
         </div>
       </section>
-      <section class="services__container">
+      <section class="services">
         <h2 class="sub__title">Életvezetési tanácsadás</h2>
         <h3 class="subsub__title">Életút elemzés, sorselemzés.</h3>
         <div class="services__item">
@@ -137,5 +173,10 @@
         </div>
       </section>
     </div>
+    <footer class="footer">
+      <p>&copy 2021 Turcsek Viviven</p>
+      <p>Minden jog fenntartva</p>
+    </footer>
+    <script src="./js/main.js"></script>
   </body>
 </html>

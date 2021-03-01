@@ -251,6 +251,28 @@ body {
   font-size: 1.6rem;
 }
 
+/**** Services page *****/
+.services {
+  padding-bottom: 2rem;
+  line-height: 1.25;
+}
+
+.services__item {
+  padding-top: 1rem;
+}
+
+.services__paragraph {
+  font-size: 1.6rem;
+}
+
+.services img {
+  display: none;
+}
+
+.main__title {
+  padding: 3rem 0;
+}
+
 footer {
   background-color: #f9e498;
   height: 50px;
