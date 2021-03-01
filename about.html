@@ -4,36 +4,83 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rólam</title>
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <div class="container">
-      <h1 class="main__title">Bemutatkozás</h1>
-      <section class="about">
-        <img src="./images/FB_IMG_1612303468036.jpg" alt="Turcsek Vivien" />
-        <p class="about__paragraph">
+    <header class="nav__container d-flex">
+      <div class="logo">
+        <a class="logo__link" href="./index.html">
+          <img src="./logos/logo.png" alt="Logo" class="logo__img" />
+        </a>
+      </div>
+      <div class="logo__title">
+        <h3>Masszázs, mozgás, tanácsadás</h3>
+      </div>
+      <div class="menu-btn">
+        <span class="menu-btn__burger"></span>
+      </div>
+      <nav class="nav">
+        <ul class="nav__menu">
+          <li class="nav__item">
+            <a href="./index.html" class="nav__link">Kezdőlap</a>
+          </li>
+          <li class="nav__item">
+            <a href="./about.html" class="nav__link">Bemutatkozás</a>
+          </li>
+          <li class="nav__item">
+            <a href="./services.html" class="nav__link">Szolgáltatások</a>
+          </li>
+          <li class="nav__item">
+            <a href="./technics.html" class="nav__link">Technikák</a>
+          </li>
+          <li class="nav__item">
+            <a href="./qualification.html" class="nav__link">Képesítések</a>
+          </li>
+          <li class="nav__item">
+            <a href="./prices.html" class="nav__link">Árak</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="wrapper container">
+      <div class="about"></div>
+      <div class="para__container">
+        <p class="paragraph">
           Kezdhetném nagyon az elején, vagy nagyon egyértelmű információkkal
           arról, hol születtem, hány testvérem van, kivel, hol élek jelenleg, de
           azokból az adatokból nem tudná senki elképzelni, ki is vagyok, milyen
           is vagyok.
         </p>
-        <p class="about__paragraph">
+        <p class="paragraph">
           Azt már egészen korán éreztem, hogy emberekkel szeretnék foglalkozni,
           legyen az lélek vagy test. Már kamasz koromban foglalkoztatott a
           spirituális út. A biológia, egészség, pszichológia. Kommunikációt
-          kezdtem el végül tanulni Főiskolán ami sosem érdekelt igazán.
-          Kiskoromtól fogva életem része volt a sport, de leginkább a tánc (jazz
-          balett, latin,afrikai táncok) Ezt követte 2006 ban és onnantól egészen
-          máig az orientális tánc, vagy más néven hastánc.
+          kezdtem el végül tanulni Főiskolán amit sikeresen be is fejeztem, de
+          igazán sosem helyezkedtem el ez irányban.
         </p>
-        <p class="about__paragraph">
-          Az emberek iránti szeretetem és a holisztikus szemlélet juttat el a
-          pácienseimhez. Nem egy egyszerű vagy bonyolult képlet alapján
-          történnek meg a változások, javulások,gyógyulások. Nincs két egyforma
+        <p class="paragraph">
+          Kiskoromtól fogva életem része volt a sport, de leginkább a tánc.
+          (jazz balett, latin, afrikai táncok). Ezt követte 2006-ban és onnantól
+          egészen máig az orientális tánc, vagy más néven hastánc.
+        </p>
+        <p class="paragraph">
+          2009-ben kezdtem el egészségügyi tanulmányaimat, és kezdtem el
+          önismerettel kapcsolatos képzésekre járni.
+        </p>
+        <p class="paragraph">
+          Az emberek iránti segítői szándék és a holisztikus szemlélet juttat el
+          a pácienseimhez. Nem egy egyszerű vagy bonyolult képlet alapján
+          történnek meg a változások, javulások, gyógyulások. Nincs két egyforma
           ember, mindenki egyedi. Egyedi testtel és életúttal. Ezzel a
           szemlélettel és legjobb tudásom szerint fogadok minden hozzám fordulót
           és segítek amiben tudok.
         </p>
-      </section>
+      </div>
     </div>
+    <footer class="footer">
+      <p>&copy 2021 Turcsek Viviven</p>
+      <p>Minden jog fenntartva</p>
+    </footer>
+    <script src="./js/main.js"></script>
   </body>
 </html>

@@ -65,6 +65,14 @@ body {
 .container {
   max-width: 1366px;
   margin: 0 auto;
+  overflow: hidden;
+  padding: 3rem 1rem;
+}
+
+.bg-contain-norepeat {
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 450px;
 }
 
 /* Navbar */
@@ -206,15 +214,8 @@ body {
   position: relative;
 }
 
-.banner__image-container {
-  overflow: hidden;
-  padding: 30px 10px;
-  max-width: 1366px;
-  margin: 0 auto;
+.banner__image {
   background-image: url(../images/123.png);
-  background-repeat: no-repeat;
-  height: 450px;
-  background-size: contain;
 }
 
 .banner blockquote {
@@ -231,6 +232,23 @@ body {
   padding: 1rem 1rem;
   font-weight: 600;
   color: #fff;
+}
+
+/*** About Page ****/
+.about {
+  overflow: hidden;
+  background: url(../images/vivien.png) no-repeat;
+  background-position-x: 10%;
+  height: 300px;
+}
+
+.para__container {
+  padding-top: 2rem;
+}
+
+.paragraph {
+  padding-top: 1rem;
+  font-size: 1.6rem;
 }
 
 footer {
