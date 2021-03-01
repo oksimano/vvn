@@ -131,6 +131,22 @@
   }
 }
 
+/*** About Page ****/
+
+.about {
+  overflow: hidden;
+  background: url(../images/vivien.png) no-repeat;
+  background-position-x: 10%;
+  height: 300px;
+}
+.para__container {
+  padding-top: 2rem;
+}
+.paragraph {
+  padding-top: 1rem;
+  font-size: 1.6rem;
+}
+
 footer {
   background-color: $secondary-color;
   height: 50px;
