@@ -156,6 +156,13 @@ body {
   z-index: 99;
 }
 
+.nav__container__width {
+  height: inherit;
+  max-width: 1366px;
+  margin: 0 auto;
+  position: relative;
+}
+
 .nav__menu {
   visibility: hidden;
   display: -webkit-box;
