@@ -35,7 +35,11 @@ body {
   font-family: $base-font;
 }
 /* common style*/
-
+.wrapper {
+  padding-top: 6rem;
+  margin: 0 auto;
+  background-color: lighten($secondary-color, 10%);
+}
 .p-abs_l_t {
   position: absolute;
   left: 0;
