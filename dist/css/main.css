@@ -31,13 +31,13 @@ a {
 
 body {
   font-family: "Raleway", sans-serif;
+  background-color: #fcf1c8;
 }
 
 /* common style*/
 .wrapper {
   padding-top: 6rem;
   margin: 0 auto;
-  background-color: #fcf1c8;
 }
 
 .p-abs_l_t {
@@ -72,7 +72,7 @@ body {
   max-width: 1366px;
   margin: 0 auto;
   overflow: hidden;
-  padding: 3rem 1rem;
+  padding: 6rem 1rem;
 }
 
 .bg-contain-norepeat {
@@ -246,11 +246,6 @@ body {
 }
 
 /**** Services page *****/
-.service {
-  background-image: url(../images/poster_bg.png);
-  background-position: center;
-}
-
 .services {
   padding-bottom: 2rem;
   line-height: 1.25;

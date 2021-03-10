@@ -33,12 +33,12 @@ a {
 }
 body {
   font-family: $base-font;
+  background-color: lighten($secondary-color, 10%);
 }
 /* common style*/
 .wrapper {
   padding-top: 6rem;
   margin: 0 auto;
-  background-color: lighten($secondary-color, 10%);
 }
 .p-abs_l_t {
   position: absolute;
@@ -58,7 +58,7 @@ body {
   max-width: 1366px;
   margin: 0 auto;
   overflow: hidden;
-  padding: 3rem 1rem;
+  padding: 6rem 1rem;
 }
 
 .bg-contain-norepeat {
