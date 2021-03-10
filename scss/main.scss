@@ -151,10 +151,6 @@
   padding-bottom: 2rem;
   line-height: 1.25;
 
-  &__item {
-    padding-top: 1rem;
-  }
-
   .sub__title {
     font-size: 1.8rem;
     color: $hamburger-color;
@@ -170,7 +166,7 @@
   }
 }
 .main__title {
-  padding: 3rem 0;
+  padding: 5rem 0;
 }
 
 footer {
