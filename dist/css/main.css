@@ -261,13 +261,11 @@ body {
 
 .services .sub__title {
   font-size: 1.8rem;
-  background-color: #562e19;
-  color: #fff;
+  color: #000;
 }
 
 .services .subsub__title {
-  background-color: #562e19;
-  color: #fff;
+  color: #000;
   font-size: 1.6rem;
 }
 
