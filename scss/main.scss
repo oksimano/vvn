@@ -135,6 +135,7 @@
 .paragraph {
   padding-top: 1rem;
   font-size: 1.6rem;
+  line-height: 2;
 }
 
 /**** Services page *****/
@@ -146,16 +147,16 @@
   &__item {
     padding-top: 1rem;
   }
-  &__paragraph {
-    font-size: 1.6rem;
-  }
+
   .sub__title {
     font-size: 1.8rem;
     color: $hamburger-color;
+    padding: 2rem 0;
   }
   .subsub__title {
     color: $hamburger-color;
     font-size: 1.6rem;
+    padding: 1.5rem 0;
   }
   img {
     display: none;
