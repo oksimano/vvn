@@ -70,7 +70,6 @@
 }
 .nav {
   &__menu {
-    visibility: hidden;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -78,14 +77,13 @@
     left: 0;
     top: 6rem;
     width: 100vw;
-    max-width: 1366px;
+
     z-index: 10;
     background-color: $secondary-color;
     transform: translateX(-100vw);
 
     transition: all 0.5s ease-in-out;
     &.open {
-      visibility: visible;
       transform: translateX(0);
     }
   }
@@ -115,9 +113,7 @@
 
 .banner {
   position: relative;
-  &__image {
-    background-image: url(../images/123.png);
-  }
+
   blockquote {
     font-size: 1.8rem;
     font-family: $quote-font;
@@ -141,7 +137,7 @@
   padding-top: 2rem;
 }
 .paragraph {
-  padding-top: 1rem;
+  padding: 1rem 0;
   font-size: 1.6rem;
   line-height: 2;
 }
@@ -184,4 +180,69 @@ footer {
 
 .qualfication__title {
   font-size: 2rem;
+}
+
+@include media-xs {
+  .bg-contain-norepeat {
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 450px;
+  }
+  .banner__bgimage {
+    background-image: url(../images/123.png);
+  }
+  .banner__img {
+    display: none;
+  }
+}
+
+@include media-sm {
+  .banner__img {
+    display: block;
+    height: 450px;
+    width: auto;
+  }
+}
+@include media-md {
+  .banner {
+    position: static;
+    display: flex;
+    align-items: center;
+
+    blockquote {
+      position: static;
+      background-color: transparent;
+    }
+  }
+}
+@include media-lg {
+  .menu-btn {
+    display: none;
+  }
+  .nav {
+    &__menu {
+      display: block;
+      width: auto;
+      position: static;
+
+      background-color: transparent;
+      transform: translateX(0);
+      text-align: right;
+      transition: all 0.5s ease-in-out;
+    }
+    &__item {
+      display: inline;
+
+      border-bottom: none;
+    }
+    &__link {
+      font-size: 1.2rem;
+    }
+  }
+}
+@include media-xl {
+  .container__large {
+    width: 1366px;
+    margin: 0 auto;
+  }
 }
