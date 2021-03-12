@@ -22,7 +22,6 @@ ul {
 
 img {
   width: 100%;
-  overflow: hidden;
 }
 
 a {
@@ -349,11 +348,30 @@ footer p {
   .nav__link {
     font-size: 1.2rem;
   }
+  .service {
+    padding-left: 2rem;
+  }
+  .services img {
+    display: block;
+    height: 400px;
+    width: auto;
+  }
+  .d-flex__large {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .container__large {
-    width: 1366px;
+    max-width: 1366px;
     margin: 0 auto;
   }
 }
