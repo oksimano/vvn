@@ -69,15 +69,8 @@ body {
 }
 
 .container {
-  max-width: 1366px;
   margin: 0 auto;
   padding: 6rem 1rem;
-}
-
-.bg-contain-norepeat {
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 450px;
 }
 
 /* Navbar */
@@ -163,7 +156,6 @@ body {
 }
 
 .nav__menu {
-  visibility: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -178,7 +170,6 @@ body {
   left: 0;
   top: 6rem;
   width: 100vw;
-  max-width: 1366px;
   z-index: 10;
   background-color: #f9e498;
   -webkit-transform: translateX(-100vw);
@@ -188,7 +179,6 @@ body {
 }
 
 .nav__menu.open {
-  visibility: visible;
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
@@ -223,10 +213,6 @@ body {
   position: relative;
 }
 
-.banner__image {
-  background-image: url(../images/123.png);
-}
-
 .banner blockquote {
   font-size: 1.8rem;
   font-family: "Playfair Display", serif;
@@ -249,7 +235,7 @@ body {
 }
 
 .paragraph {
-  padding-top: 1rem;
+  padding: 1rem 0;
   font-size: 1.6rem;
   line-height: 2;
 }
@@ -301,4 +287,73 @@ footer p {
 
 .qualfication__title {
   font-size: 2rem;
+}
+
+@media screen and (max-width: 576px) {
+  .bg-contain-norepeat {
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 450px;
+  }
+  .banner__bgimage {
+    background-image: url(../images/123.png);
+  }
+  .banner__img {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 577px) {
+  .banner__img {
+    display: block;
+    height: 450px;
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .banner {
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .banner blockquote {
+    position: static;
+    background-color: transparent;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .menu-btn {
+    display: none;
+  }
+  .nav__menu {
+    display: block;
+    width: auto;
+    position: static;
+    background-color: transparent;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    text-align: right;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  .nav__item {
+    display: inline;
+    border-bottom: none;
+  }
+  .nav__link {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container__large {
+    width: 1366px;
+    margin: 0 auto;
+  }
 }
