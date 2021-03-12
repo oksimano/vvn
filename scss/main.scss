@@ -239,10 +239,25 @@ footer {
       font-size: 1.2rem;
     }
   }
+  .service {
+    padding-left: 2rem;
+  }
+  .services {
+    img {
+      display: block;
+      height: 400px;
+      width: auto;
+    }
+  }
+  .d-flex__large {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 @include media-xl {
   .container__large {
-    width: 1366px;
+    max-width: 1366px;
     margin: 0 auto;
   }
 }
