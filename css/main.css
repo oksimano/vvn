@@ -349,7 +349,7 @@ footer p {
     border-bottom: none;
   }
   .nav__link {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
   .service {
     padding-left: 2rem;
@@ -379,5 +379,8 @@ footer p {
   .container__large {
     max-width: 1366px;
     margin: 0 auto;
+  }
+  .nav__link {
+    font-size: 1.5rem;
   }
 }
