@@ -165,6 +165,9 @@
 .main__title {
   padding: 5rem 0;
 }
+.prices {
+  color: $text-color;
+}
 
 footer {
   background-color: $secondary-color;
@@ -214,6 +217,9 @@ footer {
       background-color: transparent;
     }
   }
+  .prices {
+    background-image: url(../images/mandala_reverse.jpg);
+  }
 }
 @include media-lg {
   .menu-btn {
@@ -256,6 +262,9 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  .prices {
+    background-size: cover;
   }
 }
 @include media-xl {
