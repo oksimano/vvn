@@ -236,7 +236,7 @@ footer {
       border-bottom: none;
     }
     &__link {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
     }
   }
   .service {
@@ -262,5 +262,10 @@ footer {
   .container__large {
     max-width: 1366px;
     margin: 0 auto;
+  }
+  .nav {
+    &__link {
+      font-size: 1.5rem;
+    }
   }
 }
