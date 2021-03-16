@@ -99,7 +99,7 @@
 }
 
 .logo {
-  padding-left: 1.5rem;
+  padding-left: 1rem;
   &__img {
     height: 24px;
     width: auto;
@@ -247,6 +247,9 @@ footer {
       display: block;
       height: 400px;
       width: auto;
+    }
+    &__item {
+      max-width: 700px;
     }
   }
   .d-flex__large {

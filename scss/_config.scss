@@ -51,9 +51,15 @@ body {
 }
 .container {
   margin: 0 auto;
-  padding: 6rem 1rem;
+  padding: 6rem 1.5rem;
 }
 
+.margin-auto {
+  margin: 0 auto;
+}
+.width-700 {
+  max-width: 700px;
+}
 /* Media querries */
 
 @mixin media-xs {

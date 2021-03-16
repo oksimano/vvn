@@ -63,7 +63,15 @@ body {
 
 .container {
   margin: 0 auto;
-  padding: 6rem 1rem;
+  padding: 6rem 1.5rem;
+}
+
+.margin-auto {
+  margin: 0 auto;
+}
+
+.width-700 {
+  max-width: 700px;
 }
 
 /* Media querries */
@@ -189,7 +197,7 @@ body {
 }
 
 .logo {
-  padding-left: 1.5rem;
+  padding-left: 1rem;
 }
 
 .logo__img {
@@ -350,6 +358,9 @@ footer p {
     display: block;
     height: 400px;
     width: auto;
+  }
+  .services__item {
+    max-width: 700px;
   }
   .d-flex__large {
     display: -webkit-box;
