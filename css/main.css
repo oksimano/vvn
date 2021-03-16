@@ -268,6 +268,10 @@ body {
   padding: 5rem 0;
 }
 
+.prices {
+  color: #fff;
+}
+
 footer {
   background-color: #f9e498;
   height: 50px;
@@ -327,6 +331,9 @@ footer p {
     position: static;
     background-color: transparent;
   }
+  .prices {
+    background-image: url(../images/mandala_reverse.jpg);
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -372,6 +379,9 @@ footer p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .prices {
+    background-size: cover;
   }
 }
 
