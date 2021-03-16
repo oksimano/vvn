@@ -92,10 +92,18 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   }
   &__link {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: bold;
-    color: darken($text-color, 90%);
+    color: $hamburger-color;
+    &:hover {
+      color: lighten($hamburger-color, 50%);
+    }
   }
+}
+.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
@@ -110,6 +118,8 @@
   padding-right: 3rem;
   font-family: $quote-font;
 }
+
+/* Banner */
 
 .banner {
   position: relative;
@@ -165,8 +175,32 @@
 .main__title {
   padding: 5rem 0;
 }
+
+/* prices page extra*/
+
 .prices {
   color: $text-color;
+}
+
+/* Qualification Title */
+
+.qualfication__title {
+  font-size: 2rem;
+}
+
+/* Social icons */
+
+.social {
+  max-width: 1000px;
+  margin: 0 auto;
+  &__item {
+    text-align: center;
+  }
+
+  &__img {
+    height: 20px;
+    margin-bottom: 1.5rem;
+  }
 }
 
 footer {
@@ -179,10 +213,6 @@ footer {
   p {
     padding: 0 1rem;
   }
-}
-
-.qualfication__title {
-  font-size: 2rem;
 }
 
 @include media-xs {
@@ -207,6 +237,11 @@ footer {
   }
 }
 @include media-md {
+  .logo {
+    &__img {
+      height: 28px;
+    }
+  }
   .banner {
     position: static;
     display: flex;
@@ -217,11 +252,28 @@ footer {
       background-color: transparent;
     }
   }
+  .social__item {
+    border: none;
+    width: 350px;
+  }
   .prices {
     background-image: url(../images/mandala_reverse.jpg);
   }
+  .d-flex-wrap {
+    flex-wrap: wrap;
+  }
+  .d-flex__md {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 @include media-lg {
+  .logo {
+    &__img {
+      height: 30px;
+    }
+  }
   .menu-btn {
     display: none;
   }
@@ -240,9 +292,6 @@ footer {
       display: inline;
 
       border-bottom: none;
-    }
-    &__link {
-      font-size: 1.3rem;
     }
   }
   .service {
@@ -274,7 +323,7 @@ footer {
   }
   .nav {
     &__link {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
     }
   }
 }

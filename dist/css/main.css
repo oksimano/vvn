@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,800;0,900;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&display=swap");
+/* Set color based on background-color */
+/* Set Bg and text color based on one color */
 *,
 *:before,
 *:after {
@@ -47,18 +49,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.d-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .container {
@@ -191,9 +181,25 @@ body {
 }
 
 .nav__link {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: bold;
-  color: #1a1a1a;
+  color: #000;
+}
+
+.nav__link:hover {
+  color: gray;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .logo {
@@ -211,6 +217,7 @@ body {
   font-family: "Playfair Display", serif;
 }
 
+/* Banner */
 .banner {
   position: relative;
 }
@@ -268,8 +275,29 @@ body {
   padding: 5rem 0;
 }
 
+/* prices page extra*/
 .prices {
   color: #fff;
+}
+
+/* Qualification Title */
+.qualfication__title {
+  font-size: 2rem;
+}
+
+/* Social icons */
+.social {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.social__item {
+  text-align: center;
+}
+
+.social__img {
+  height: 20px;
+  margin-bottom: 1.5rem;
 }
 
 footer {
@@ -289,10 +317,6 @@ footer {
 
 footer p {
   padding: 0 1rem;
-}
-
-.qualfication__title {
-  font-size: 2rem;
 }
 
 @media screen and (max-width: 576px) {
@@ -318,6 +342,9 @@ footer p {
 }
 
 @media screen and (min-width: 768px) {
+  .logo__img {
+    height: 28px;
+  }
   .banner {
     position: static;
     display: -webkit-box;
@@ -331,12 +358,34 @@ footer p {
     position: static;
     background-color: transparent;
   }
+  .social__item {
+    border: none;
+    width: 350px;
+  }
   .prices {
     background-image: url(../images/mandala_reverse.jpg);
+  }
+  .d-flex-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .d-flex__md {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
 @media screen and (min-width: 992px) {
+  .logo__img {
+    height: 30px;
+  }
   .menu-btn {
     display: none;
   }
@@ -354,9 +403,6 @@ footer p {
   .nav__item {
     display: inline;
     border-bottom: none;
-  }
-  .nav__link {
-    font-size: 1.3rem;
   }
   .service {
     padding-left: 2rem;
@@ -391,6 +437,6 @@ footer p {
     margin: 0 auto;
   }
   .nav__link {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 }

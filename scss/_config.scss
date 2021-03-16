@@ -9,6 +9,22 @@ $hamburger-color: #000;
 $quote-font: "Playfair Display", serif;
 $base-font: "Raleway", sans-serif;
 
+/* Set color based on background-color */
+
+@function set-text-color($color) {
+  @if (lightness($color) > 70) {
+    @return $hamburger-color;
+  } @else {
+    @return $secondary-color;
+  }
+}
+
+/* Set Bg and text color based on one color */
+@mixin set-mix-color($color) {
+  background-color: $color;
+  color: set-text-color($color);
+}
+
 *,
 *:before,
 *:after {
@@ -44,11 +60,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-.d-flex {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+
 .container {
   margin: 0 auto;
   padding: 6rem 1.5rem;
