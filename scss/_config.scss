@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,800;0,900;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap");
 
 $primary-color: #562e19;
 $secondary-color: #f9e498;
@@ -8,9 +9,10 @@ $text-color: #fff;
 $hamburger-color: #000;
 $quote-font: "Playfair Display", serif;
 $base-font: "Raleway", sans-serif;
+$hover-color: #ca0252;
+$logo-title-font: "Alex Brush", cursive;
 
 /* Set color based on background-color */
-
 @function set-text-color($color) {
   @if (lightness($color) > 70) {
     @return $hamburger-color;
@@ -71,6 +73,10 @@ body {
 }
 .width-700 {
   max-width: 700px;
+}
+
+.p-right {
+  padding-right: 1rem;
 }
 /* Media querries */
 

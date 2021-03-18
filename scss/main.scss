@@ -96,7 +96,7 @@
     font-weight: bold;
     color: $hamburger-color;
     &:hover {
-      color: lighten($hamburger-color, 50%);
+      color: $hover-color;
     }
   }
 }
@@ -111,12 +111,15 @@
   &__img {
     height: 24px;
     width: auto;
+    &:hover {
+      color: $hover-color;
+    }
   }
 }
 .logo__title {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   padding-right: 3rem;
-  font-family: $quote-font;
+  font-family: $logo-title-font;
 }
 
 /* Banner */
@@ -180,6 +183,8 @@
 
 .prices {
   color: $text-color;
+  background-image: url(../images/mandala_reverse.jpg);
+  text-shadow: 2px 3px 4px black;
 }
 
 /* Qualification Title */
@@ -241,6 +246,9 @@ footer {
     &__img {
       height: 28px;
     }
+    &__title {
+      font-size: 1.6rem;
+    }
   }
   .banner {
     position: static;
@@ -256,9 +264,7 @@ footer {
     border: none;
     width: 350px;
   }
-  .prices {
-    background-image: url(../images/mandala_reverse.jpg);
-  }
+
   .d-flex-wrap {
     flex-wrap: wrap;
   }
@@ -300,8 +306,8 @@ footer {
   .services {
     img {
       display: block;
-      height: 400px;
-      width: auto;
+      width: 550px;
+      column-gap: 1rem;
     }
     &__item {
       max-width: 700px;
@@ -317,6 +323,9 @@ footer {
   }
 }
 @include media-xl {
+  .logo__title {
+    font-size: 1.8;
+  }
   .container__large {
     max-width: 1366px;
     margin: 0 auto;
