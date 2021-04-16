@@ -296,6 +296,9 @@ footer {
 		&__img {
 			height: 30px;
 		}
+		&__title {
+			font-size: 1.8rem;
+		}
 	}
 	.menu-btn {
 		display: none;
@@ -335,7 +338,7 @@ footer {
 }
 @include media-xl {
 	.logo__title {
-		font-size: 1.8;
+		font-size: 2rem;
 	}
 
 	.nav {
