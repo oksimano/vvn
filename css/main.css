@@ -404,7 +404,7 @@ footer p {
 
 @media screen and (min-width: 1200px) {
   .logo__title {
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
   .nav__link {
     font-size: 1.4rem;
