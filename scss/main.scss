@@ -90,6 +90,12 @@
 	&__item {
 		padding: 2rem;
 		border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+		&:first-child {
+			padding-right: 1rem;
+		}
+		&:last-child {
+			padding-right: 1rem;
+		}
 	}
 	&__link {
 		font-size: 1.3rem;
@@ -127,21 +133,21 @@
 
 .banner {
 	position: relative;
+	&__img {
+		object-fit: cover;
+		min-height: 300px;
+	}
 
 	blockquote {
 		font-size: 1.8rem;
 		font-family: $quote-font;
 		text-align: center;
-		position: absolute;
 		background: lighten($secondary-color, 5%);
-		bottom: 0;
-		left: 0;
-		right: 0;
 		margin: 0 auto;
 		text-shadow: 0 0 1px $hamburger-color;
-		padding: 1rem 1rem;
+		padding: 2rem 1rem;
 		font-weight: 600;
-		color: $hamburger-color;
+		color: $hover-color;
 	}
 }
 
@@ -183,9 +189,9 @@
 /* prices page extra*/
 
 .prices {
-	color: $text-color;
-	background-image: url(../images/mandala_reverse.jpg);
-	text-shadow: 1px 0px 5px black;
+	color: $hover-color;
+	padding-top: 4rem;
+
 	ul {
 		font-weight: bold;
 	}
@@ -228,22 +234,10 @@ footer {
 	.bg-contain-norepeat {
 		background-repeat: no-repeat;
 		background-size: contain;
-		height: 450px;
-	}
-	.banner__bgimage {
-		background-image: url(../images/123.png);
-	}
-	.banner__img {
-		display: none;
 	}
 }
 
 @include media-sm {
-	.banner__img {
-		display: block;
-		height: 450px;
-		width: auto;
-	}
 }
 @include media-md {
 	.width-700-md {
@@ -259,12 +253,14 @@ footer {
 	}
 	.banner {
 		position: static;
-		display: flex;
 		align-items: center;
-
+		&__img {
+			box-shadow: 0px 2px 29px 1px $hamburger-color;
+		}
 		blockquote {
 			position: static;
 			background-color: transparent;
+			margin-left: 1rem;
 		}
 	}
 	.social__item {

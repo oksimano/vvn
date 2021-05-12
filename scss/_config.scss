@@ -81,7 +81,7 @@ body {
 /* Media querries */
 
 @mixin media-xs {
-	@media screen and (max-width: 577px) {
+	@media screen and (max-width: 576px) {
 		@content;
 	}
 }
