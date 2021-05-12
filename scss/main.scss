@@ -145,7 +145,7 @@
 		background: lighten($secondary-color, 5%);
 		margin: 0 auto;
 		text-shadow: 0 0 1px $hamburger-color;
-		padding: 2rem 1rem;
+		padding: 3rem 1rem;
 		font-weight: 600;
 		color: $hover-color;
 	}
@@ -208,6 +208,7 @@
 .social {
 	max-width: 1000px;
 	margin: 0 auto;
+	padding: 3rem 0;
 	&__item {
 		text-align: center;
 	}
