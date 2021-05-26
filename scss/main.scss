@@ -126,6 +126,12 @@
 	padding-right: 3rem;
 	font-family: $logo-title-font;
 	color: $hover-color;
+	letter-spacing: 1px;
+}
+.logo-container {
+	min-width: 300px;
+	max-width: 400px;
+	padding-bottom: 3rem;
 }
 
 /* Banner */
@@ -134,19 +140,18 @@
 	position: relative;
 	&__img {
 		object-fit: cover;
-		min-height: 300px;
 	}
 
 	blockquote {
 		font-size: 1.8rem;
-		font-family: $quote-font;
+		font-family: $logo-title-font;
 		text-align: center;
 		background: lighten($secondary-color, 5%);
 		margin: 0 auto;
-		text-shadow: 0 0 1px $hamburger-color;
 		padding: 3rem 1rem;
-		font-weight: 600;
+		font-weight: bold;
 		color: $hover-color;
+		letter-spacing: 1px;
 	}
 }
 
@@ -169,12 +174,12 @@
 
 	.sub__title {
 		font-size: 2rem;
-		color: $hamburger-color;
+		color: $hover-color;
 		padding: 2rem 0;
 	}
 	.subsub__title {
 		color: $hamburger-color;
-		font-size: 1.8rem;
+		font-size: 1.7rem;
 	}
 	img {
 		display: none;
@@ -183,6 +188,7 @@
 .main__title {
 	padding: 5rem 0;
 	font-size: 3rem;
+	color: $hover-color;
 }
 
 /* prices page extra*/
@@ -229,14 +235,10 @@ footer {
 	}
 }
 
-@include media-xs {
-	.bg-contain-norepeat {
-		background-repeat: no-repeat;
-		background-size: contain;
-	}
-}
-
 @include media-sm {
+	.banner blockquote {
+		font-size: 2rem;
+	}
 }
 @include media-md {
 	.width-700-md {
@@ -257,6 +259,7 @@ footer {
 			box-shadow: 0px 2px 29px 1px $hamburger-color;
 		}
 		blockquote {
+			font-size: 2.5rem;
 			position: static;
 			background-color: transparent;
 			margin-left: 1rem;
