@@ -3,345 +3,354 @@
 /* Navbar */
 
 .menu-btn {
-	position: absolute;
-	z-index: 99;
-	right: 1.5rem;
-	top: 2rem;
-	height: 24px;
-	width: 28px;
-	cursor: pointer;
-	transition: all 0.5s ease-in-out;
-	&__burger {
-		position: absolute;
-		right: 0.25rem;
-		top: 1rem;
-		width: 22px;
-		height: 2.2px;
-		background: $hamburger-color;
-		transition: all 0.5s ease-in-out;
-		&::before {
-			content: "";
-			position: absolute;
-			top: -6px;
-			width: 22px;
-			height: 2.2px;
-			background: $hamburger-color;
-			transition: all 0.5s ease-in-out;
-		}
-		&::after {
-			content: "";
-			position: absolute;
-			top: 6px;
-			width: 14px;
-			height: 2.2px;
-			background: $hamburger-color;
-			transition: all 0.5s ease-in-out;
-		}
-		&.open {
-			transform: rotate(720deg);
-			background: transparent;
+  position: absolute;
+  z-index: 99;
+  right: 1.5rem;
+  top: 2rem;
+  height: 24px;
+  width: 28px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  &__burger {
+    position: absolute;
+    right: 0.25rem;
+    top: 1rem;
+    width: 22px;
+    height: 2.2px;
+    background: $hamburger-color;
+    transition: all 0.5s ease-in-out;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -6px;
+      width: 22px;
+      height: 2.2px;
+      background: $hamburger-color;
+      transition: all 0.5s ease-in-out;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 6px;
+      width: 14px;
+      height: 2.2px;
+      background: $hamburger-color;
+      transition: all 0.5s ease-in-out;
+    }
+    &.open {
+      transform: rotate(720deg);
+      background: transparent;
 
-			&::before {
-				transform: rotate(45deg) translate(5px, 5px);
-				width: 25px;
-			}
-			&::after {
-				transform: rotate(-45deg) translate(4px, -3px);
-				width: 25px;
-			}
-		}
-	}
+      &::before {
+        transform: rotate(45deg) translate(5px, 5px);
+        width: 25px;
+      }
+      &::after {
+        transform: rotate(-45deg) translate(4px, -3px);
+        width: 25px;
+      }
+    }
+  }
 }
 .nav__container {
-	background-color: $secondary-color;
-	height: 6rem;
-	position: fixed;
-	right: 0;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-	left: 0;
-	top: 0;
-	z-index: 99;
-	&__width {
-		height: inherit;
-		max-width: 1366px;
-		margin: 0 auto;
-		position: relative;
-	}
+  background-color: $secondary-color;
+  height: 6rem;
+  position: fixed;
+  right: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  left: 0;
+  top: 0;
+  z-index: 99;
+  &__width {
+    height: inherit;
+    max-width: 1366px;
+    margin: 0 auto;
+    position: relative;
+  }
 }
 .nav {
-	&__menu {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-evenly;
-		position: absolute;
-		left: 0;
-		top: 6rem;
-		width: 100vw;
-		z-index: 10;
-		background-color: $secondary-color;
-		transform: translateX(-100vw);
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    left: 0;
+    top: 6rem;
+    width: 100vw;
+    z-index: 10;
+    background-color: $secondary-color;
+    transform: translateX(-100vw);
 
-		transition: all 0.5s ease-in-out;
-		&.open {
-			transform: translateX(0);
-		}
-	}
-	&__item {
-		padding: 2rem;
-		border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-		&:first-child {
-			padding-right: 1rem;
-		}
-		&:last-child {
-			padding-right: 1rem;
-		}
-	}
-	&__link {
-		font-size: 1.3rem;
-		font-weight: bold;
-		color: $hamburger-color;
-		&:hover {
-			color: $hover-color;
-		}
-	}
+    transition: all 0.5s ease-in-out;
+    &.open {
+      transform: translateX(0);
+    }
+  }
+  &__item {
+    padding: 2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    &:first-child {
+      padding-right: 1rem;
+    }
+    &:last-child {
+      padding-right: 1rem;
+    }
+  }
+  &__link {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: $hamburger-color;
+    &:hover {
+      color: $hover-color;
+    }
+  }
 }
 .d-flex {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
-	padding-left: 1rem;
-	&__img {
-		height: 24px;
-		width: auto;
-		&:hover {
-			color: $hover-color;
-		}
-	}
+  padding-left: 1rem;
+  &__img {
+    height: 24px;
+    width: auto;
+    &:hover {
+      color: $hover-color;
+    }
+  }
 }
 .logo__title {
-	font-size: 1.5rem;
-	padding-right: 3rem;
-	font-family: $logo-title-font;
-	color: $hover-color;
-	letter-spacing: 1px;
+  font-size: 1.5rem;
+  padding-right: 3rem;
+  font-family: $logo-title-font;
+  color: $hover-color;
+  letter-spacing: 1px;
 }
 .logo-container {
-	min-width: 300px;
-	max-width: 400px;
-	padding-bottom: 3rem;
+  min-width: 300px;
+  max-width: 400px;
+  padding-bottom: 3rem;
 }
 
 /* Banner */
 
 .banner {
-	position: relative;
-	&__img {
-		object-fit: cover;
-	}
+  position: relative;
+  &__img {
+    object-fit: cover;
+  }
 
-	blockquote {
-		font-size: 1.8rem;
-		font-family: $logo-title-font;
-		text-align: center;
-		background: lighten($secondary-color, 5%);
-		margin: 0 auto;
-		padding: 3rem 1rem;
-		font-weight: bold;
-		color: $hover-color;
-		letter-spacing: 1px;
-	}
+  blockquote {
+    font-size: 1.8rem;
+    font-family: $logo-title-font;
+    text-align: center;
+    background: lighten($secondary-color, 5%);
+    margin: 0 auto;
+    padding: 3rem 1rem;
+    font-weight: bold;
+    color: $hover-color;
+    letter-spacing: 1px;
+  }
 }
 
 /*** About Page ****/
 
 .para__container {
-	padding-top: 2rem;
+  padding-top: 2rem;
 }
 .paragraph {
-	padding: 1rem 0;
-	font-size: 1.6rem;
-	line-height: 2;
+  padding: 1rem 0;
+  font-size: 1.6rem;
+  line-height: 2;
+}
+.image-container {
+  margin-top: 8rem;
+  width: 250px;
+
+  img {
+    border-radius: 50%;
+    border: 10px solid $hover-color;
+  }
 }
 
 /**** Services page *****/
 
 .services {
-	padding-bottom: 2rem;
-	line-height: 1.25;
+  padding-bottom: 2rem;
+  line-height: 1.25;
 
-	.sub__title {
-		font-size: 2rem;
-		color: $hover-color;
-		padding: 2rem 0;
-	}
-	.subsub__title {
-		color: $hamburger-color;
-		font-size: 1.7rem;
-	}
-	img {
-		display: none;
-	}
+  .sub__title {
+    font-size: 2rem;
+    color: $hover-color;
+    padding: 2rem 0;
+  }
+  .subsub__title {
+    color: $hamburger-color;
+    font-size: 1.7rem;
+  }
+  img {
+    display: none;
+  }
 }
 .main__title {
-	padding: 5rem 0;
-	font-size: 3rem;
-	color: $hover-color;
+  padding: 5rem 0;
+  font-size: 3rem;
+  color: $hover-color;
 }
 
 /* prices page extra*/
 
 .prices {
-	color: $hover-color;
+  color: $hover-color;
 
-	ul {
-		font-weight: bold;
-	}
+  ul {
+    font-weight: bold;
+  }
 }
 
 /* Qualification Title */
 
 .qualfication__title {
-	font-size: 2rem;
+  font-size: 2rem;
 }
 
 /* Social icons */
 
 .social {
-	max-width: 1000px;
-	margin: 0 auto;
-	padding: 3rem 0;
-	&__item {
-		text-align: center;
-	}
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 3rem 0;
+  &__item {
+    text-align: center;
+  }
 
-	&__img {
-		height: 20px;
-		margin-bottom: 1.5rem;
-	}
+  &__img {
+    height: 20px;
+    margin-bottom: 1.5rem;
+  }
 }
 
 footer {
-	background-color: $secondary-color;
-	height: 50px;
-	font-size: 1.4rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	p {
-		padding: 0 1rem;
-	}
+  background-color: $secondary-color;
+  height: 50px;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    padding: 0 1rem;
+  }
 }
 
 @include media-sm {
-	.banner blockquote {
-		font-size: 2rem;
-	}
+  .banner blockquote {
+    font-size: 2rem;
+  }
 }
 @include media-md {
-	.width-700-md {
-		max-width: 700px;
-	}
-	.logo {
-		&__img {
-			height: 28px;
-		}
-		&__title {
-			font-size: 1.6rem;
-		}
-	}
-	.banner {
-		position: static;
-		align-items: center;
-		&__img {
-			box-shadow: 0px 2px 29px 1px $hamburger-color;
-		}
-		blockquote {
-			font-size: 2.5rem;
-			position: static;
-			background-color: transparent;
-			margin-left: 1rem;
-		}
-	}
-	.social__item {
-		border: none;
-		width: 350px;
-	}
-	.services {
-		img {
-			display: block;
-			max-width: 550px;
-			column-gap: 1rem;
-		}
-		&__item {
-			max-width: 700px;
-		}
-	}
+  .width-700-md {
+    max-width: 700px;
+  }
+  .logo {
+    &__img {
+      height: 28px;
+    }
+    &__title {
+      font-size: 1.6rem;
+    }
+  }
+  .banner {
+    position: static;
+    align-items: center;
+    &__img {
+      box-shadow: 0px 2px 29px 1px $hamburger-color;
+    }
+    blockquote {
+      font-size: 2.5rem;
+      position: static;
+      background-color: transparent;
+      margin-left: 1rem;
+    }
+  }
+  .social__item {
+    border: none;
+    width: 350px;
+  }
+  .services {
+    img {
+      display: block;
+      max-width: 550px;
+      column-gap: 1rem;
+    }
+    &__item {
+      max-width: 700px;
+    }
+  }
 
-	.d-flex-wrap {
-		flex-wrap: wrap;
-	}
-	.d-flex__md {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
+  .d-flex-wrap {
+    flex-wrap: wrap;
+  }
+  .d-flex__md {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 @include media-lg {
-	.logo {
-		&__img {
-			height: 30px;
-		}
-		&__title {
-			font-size: 1.8rem;
-		}
-	}
-	.menu-btn {
-		display: none;
-	}
-	.nav {
-		&__menu {
-			display: block;
-			width: auto;
-			position: static;
+  .logo {
+    &__img {
+      height: 30px;
+    }
+    &__title {
+      font-size: 1.8rem;
+    }
+  }
+  .menu-btn {
+    display: none;
+  }
+  .nav {
+    &__menu {
+      display: block;
+      width: auto;
+      position: static;
 
-			background-color: transparent;
-			transform: translateX(0);
-			text-align: right;
-			transition: all 0.5s ease-in-out;
-		}
-		&__item {
-			display: inline;
-			border-bottom: none;
-		}
-	}
-	.service {
-		padding-left: 2rem;
-	}
+      background-color: transparent;
+      transform: translateX(0);
+      text-align: right;
+      transition: all 0.5s ease-in-out;
+    }
+    &__item {
+      display: inline;
+      border-bottom: none;
+    }
+  }
+  .service {
+    padding-left: 2rem;
+  }
 
-	.d-flex__large {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
-	.prices {
-		background-size: cover;
-	}
-	.container__large {
-		max-width: 1366px;
-		margin: 0 auto;
-	}
+  .d-flex__large {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .prices {
+    background-size: cover;
+  }
+  .container__large {
+    max-width: 1366px;
+    margin: 0 auto;
+  }
 }
 @include media-xl {
-	.logo__title {
-		font-size: 1.9rem;
-	}
+  .logo__title {
+    font-size: 1.9rem;
+  }
 
-	.nav {
-		&__link {
-			font-size: 1.4rem;
-		}
-	}
+  .nav {
+    &__link {
+      font-size: 1.4rem;
+    }
+  }
 }

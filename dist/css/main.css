@@ -244,6 +244,16 @@ body {
   line-height: 2;
 }
 
+.image-container {
+  margin-top: 8rem;
+  width: 250px;
+}
+
+.image-container img {
+  border-radius: 50%;
+  border: 10px solid #ca0252;
+}
+
 /**** Services page *****/
 .services {
   padding-bottom: 2rem;
